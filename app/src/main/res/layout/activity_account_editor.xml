@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/window_bg" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- 输入内容 -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/rect_border"
+                android:stretchColumns="1" >
+
+                <!-- 名称 -->
+
+                <TableRow
+                    android:id="@+id/tableRow_AccountName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/input_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:text="@string/account_name" />
+
+                    <EditText
+                        android:id="@+id/txt_account_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/account_name_hint"
+                        android:singleLine="true"
+                        android:textSize="@dimen/input_text_size"
+                        android:maxLength="15"  >
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="@color/divider" />
+
+                <!-- 金额 -->
+
+                <TableRow
+                    android:id="@+id/tableRow_AccountBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/input_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:text="@string/account_balance" />
+
+                    <EditText
+                        android:id="@+id/txt_account_balance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/account_balance_hint"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textSize="@dimen/input_text_size"
+                        android:maxLength="10" >
+                    </EditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

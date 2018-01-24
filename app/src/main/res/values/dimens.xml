@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="input_text_size">15dip</dimen>
+	
+	<dimen name="list_item_left">10dip</dimen>
+	<dimen name="list_item_right">10dip</dimen>
+	<dimen name="list_item_top">15dip</dimen>
+	<dimen name="list_item_bottom">15dip</dimen>
+</resources>

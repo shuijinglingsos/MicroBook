@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" 
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="类别"
+            android:textColor="#000"
+            android:textSize="20dip"
+            />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="这里是备注，如果没有备注" 
+            android:textColor="#646464"
+            android:textSize="13dip"
+            />
+
+        
+        
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 200000" 
+            android:textColor="#000"
+            android:textSize="17dip"
+            android:layout_marginRight="10dp"
+            />
+    
+    
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_list_item_arrow"
+            android:layout_marginRight="5dip" />
+
+  </LinearLayout>

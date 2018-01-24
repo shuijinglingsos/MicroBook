@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btns_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dip" >
+
+    
+    <Button
+        android:id="@+id/btn_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dip"
+        android:layout_weight="0.5"
+        android:background="@drawable/btn_style_blue"
+        android:text="@string/recode_transfer"
+        android:textColor="#fff" />
+    
+    
+    <Button
+        android:id="@+id/btn_income"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dip"
+        android:layout_weight="0.5"
+        android:background="@drawable/btn_style_red"
+        android:text="@string/recode_income" 
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn_expend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/btn_style_green"
+        android:text="@string/recode_expend"
+        android:textColor="#fff" />
+
+</LinearLayout>

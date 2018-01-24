@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="window_bg">#eeeeee</color>
+    <color name="expend_money">#00A500</color>
+    <color name="income_money">#A50000</color>
+    <color name="transfer_money">#0000A5</color>
+    <color name="balance_change_money">#000000</color>
+    <color name="divider">#dddddd</color>
+    <color name="warning">#aa0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

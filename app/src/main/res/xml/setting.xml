@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_title_backup_recover" >
+        <Preference
+            android:key="@string/db_backup"
+            android:summary="@string/db_backup_summary"
+            android:title="@string/db_backup" />
+        <Preference
+            android:key="@string/db_recover"
+            android:summary="@string/db_recover_summary"
+            android:title="@string/db_recover" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_title_password" >
+        <CheckBoxPreference
+            android:key="@string/setting_login_password"
+            android:summaryOff="@string/setting_login_password_off"
+            android:summaryOn="@string/setting_login_password_on"
+            android:title="@string/setting_login_password" />
+
+        <Preference
+            android:dependency="@string/setting_login_password"
+            android:key="@string/setting_password"
+            android:title="@string/setting_password" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_title_Feedback" >
+        <Preference
+            android:key="@string/setting_SendFeedback"
+            android:summary="@string/setting_SendFeedBack_summary"
+            android:title="@string/setting_SendFeedback" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

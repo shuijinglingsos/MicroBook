@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lidong.daymoney">
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下两个为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 首页 -->
+        <activity android:name=".ui.MainActivity" />
+
+        <!-- 明细 -->
+        <activity
+            android:name=".ui.TransactionActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 统计 -->
+        <activity
+            android:name=".ui.StatisticsActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+
+        <!-- 分类管理 -->
+        <activity
+            android:name=".ui.CategoryActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 账户管理 -->
+        <activity
+            android:name=".ui.AccountActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 设置 -->
+        <activity android:name=".ui.SettingActivity" />
+
+        <!-- 恢复数据 -->
+        <activity
+            android:name=".ui.RecoverActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 交易明细编辑器 -->
+        <activity
+            android:name=".ui.TransactionEditor"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 筛选 -->
+        <activity
+            android:name=".ui.FilterActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 转账 -->
+        <activity
+            android:name=".ui.TransferEditor"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 分类编辑器 -->
+        <activity
+            android:name=".ui.CategoryEditorActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 账户编辑器 -->
+        <activity
+            android:name=".ui.AccountEditorActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 金额编辑器 -->
+        <activity
+            android:name=".ui.InputMoneyActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 备注编辑器 -->
+        <activity
+            android:name=".ui.InputRemarkActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 日期编辑器 -->
+        <activity
+            android:name=".ui.InputDateActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 密码编辑 -->
+        <activity
+            android:name=".ui.PasswordEditActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 友盟sdk -->
+
+        <activity
+            android:name="com.umeng.fb.ui.SendFeedback"
+            android:theme="@style/UMengStyle"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversations"
+            android:theme="@style/UMengStyle" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard"
+            android:theme="@style/UMengStyle" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="502c74085270154187000072" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="163" />
+
+        <!-- 友盟sdk   end -->
+    </application>
+
+</manifest>
