@@ -37,7 +37,8 @@
         </activity>
 
         <!-- 首页 -->
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <!-- 明细 -->
         <activity

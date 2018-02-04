@@ -40,7 +40,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppBaseActivity {
 
 	private double[] todaySum, weekSum, monthSum;
 	private ListView listView;
@@ -59,27 +59,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	/**
-	 * 初始化控件
-	 */
-	private void initControl() {
-		// 友盟错误报告
-		MobclickAgent.onError(this);
-		// 友盟 检查反馈是否有恢复
-		UMFeedbackService.enableNewReplyNotification(this,
-				NotificationType.NotificationBar);
-
-		listView = (ListView) findViewById(R.id.listView_main);
-		listView.setOnItemClickListener(listItemClick);
-
-		getData();
-
-		adapter = new MainListAdapter(this);
-		listView.setAdapter(adapter);
-
-		listAnim();
-	}
-
-	/**
 	 * 显示登录（输入密码）
 	 */
 	private void showLogin() {
@@ -94,6 +73,34 @@ public class MainActivity extends AppCompatActivity {
 			initControl();
 		}
 	}
+
+	/**
+	 * 初始化控件
+	 */
+	private void initControl() {
+		// 友盟错误报告
+		MobclickAgent.onError(this);
+		// 友盟 检查反馈是否有恢复
+		UMFeedbackService.enableNewReplyNotification(this,
+				NotificationType.NotificationBar);
+
+//		listView = (ListView) findViewById(R.id.listView_main);
+//		listView.setOnItemClickListener(listItemClick);
+
+		getData();
+
+//		adapter = new MainListAdapter(this);
+//		listView.setAdapter(adapter);
+//
+//		listAnim();
+
+		show();
+	}
+
+	private void show() {
+
+	}
+
 
 	/**
 	 * 退出
@@ -534,16 +541,4 @@ public class MainActivity extends AppCompatActivity {
 		listView.setLayoutAnimation(controller);
 	}
 
-	//----------------- 友盟统计--------------------
-
-	public void onResume() {
-		super.onResume();
-		MobclickAgent.onResume(this);
-	}
-
-	public void onPause() {
-		super.onPause();
-		MobclickAgent.onPause(this);
-	}
-	//----------------- 友盟统计 end--------------------
 }

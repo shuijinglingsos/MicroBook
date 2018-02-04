@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorPrimary"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:onClick="onClick">
+
+    <LinearLayout
+        android:id="@+id/slide_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivAvatar"
+            android:src="@drawable/ic_account_circle_white_48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击登陆"
+            android:textSize="17sp"
+            android:textColor="#FFFFFf"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tvUserName" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

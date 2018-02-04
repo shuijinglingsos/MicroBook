@@ -12,6 +12,11 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="title_text">
         <item name="android:textColor">#fff</item>
         <item name="android:textSize">20dip</item>
